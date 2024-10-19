@@ -1,0 +1,124 @@
+/* Stilar för hela sidan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header-stil */
+.admin-header {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+.header-content {
+    padding-left: 20px;
+}
+
+.header-content h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    height: calc(100vh - 50px); /* Anpassar höjden till skärmen minus header */
+}
+
+/* Sidebar-stil */
+.sidebar {
+    background-color: #ececec;
+    width: 100px;
+    padding: 20px;
+    border: 2px solid #000000;
+
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 0px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main content-stil */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-bar h2 {
+    margin: 0;
+}
+
+.new-product-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Tabell-stil */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000; /* Mörkare gräns för tabellen */
+}
+
+/* Första raden i tabellhuvudet */
+.product-table th {
+    background-color: #a22881; /* Mörkgrå bakgrundsfärg */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: 1px solid #000; /* Skarp svart gräns */
+    padding: 8px;
+    text-align: left;
+}
+
+/* Tabellceller - randiga rader */
+.product-table td {
+    padding: 8px;
+    border: 1px solid #000; /* Skarp svart gräns */
+    text-align: left;
+}
+
+.product-table tr:nth-child(2) {
+    background-color: #ffffff; /* Ljusgrå */
+}
+
+.product-table tr:nth-child(3) {
+    background-color: #e0e0e0 ; /* Vit */
+}
+
+.product-table tr:nth-child(4) {
+    background-color: #ffffff; /* Ljusgrå */
+}

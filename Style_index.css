@@ -1,0 +1,2666 @@
+@media screen and (max-width: 639px) {
+
+    /* Grundläggande stil för body */
+    body {
+
+        margin: 0; /* Removes default margin around the body */
+        padding: 20px 20px; /* Removes padding inside the body */
+        box-sizing: border-box; /* Ensures padding and borders are included in the body's width/height */
+        font-family: Arial, sans-serif;
+        overflow-x: hidden; /* Tar bort horisontell scrollbar */
+        background-color: #ffffff;
+      
+    }
+
+    /* Container för hela headern */
+    .header {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        
+
+       
+    }
+
+    /* Stil för logotypcontainern */
+    .logo-container {
+        text-align: center;      /* Vänsterjusterar logotypen */
+        margin: 0px 0px;     /* Lägger till vertikal marginal */
+
+    }
+
+    /* Stil för logotypen */
+    .logo {
+        width: 100%;           /* Säkerställer att logotypen inte överstiger containerns bredd */
+        aspect-ratio: 4 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        
+    }
+
+    /* Container för sökfältet och ikonerna */
+    .search-icons-container {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;              /* Förhindrar att innehållet bryts till nästa rad */
+        justify-content: space-between; /* Placerar sökfältet till vänster och ikonerna till höger */
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Container för sökfältet */
+    .search-container {
+    width:  100%;                 /* Låter sökfältet ta upp ledigt utrymme */
+    }
+
+    /* Stil för sökfältet */
+    .search-bar {
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 5px;
+        margin-right: 0px;       /* Låter sökfältet justera högermarginal i sin container */
+
+    }
+
+    .search-bar i {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+    .search-bar input {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 5px;
+        width: 100%;            /* Fyller ut hela sökfältets bredd */
+        box-sizing: border-box;
+    }
+
+    /* Stil för ikonkontainern */
+    .icons-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;              /* Skapar mellanrum mellan ikonerna */
+        margin-right: 0px;     /* Lägger till höger marginal för anpassning */
+        flex-shrink: 0;         /* Förhindrar att ikonerna krymper */
+    }
+
+    /* Stil för ikonerna */
+    .icons-container i {
+        font-size: 30px;
+        cursor: pointer;
+        
+    }
+
+    /* Valfria stilar för individuella ikoner */
+    .fa-heart {
+        color: grey;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .fa-shopping-cart {
+        margin-right: 0px;
+        color: #65359b;
+    }
+
+
+
+    /*NAVIGATION LINKS*/
+    /**************************************************************************************/
+    /* Navigation länkar stil */
+    .nav-links {
+        margin-top: 20px;
+        margin-left: 0px;
+        background-color: #ffffff;
+    }
+
+    /* Gör varje listobjekt till blockelement för att få dem på varsin rad */
+    .nav-links ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .nav-links li {
+        margin-bottom: 5px; /* Lägg till utrymme mellan länkarna */
+        font-size: 16px;
+    }
+
+    /* Stil för länkarna */
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block; /* Gör länkarna till blockelement för att de ska täcka hela bredden av listobjektet */
+    }
+
+        /* Stil för behållaren som håller alla "spot"-element i en rad */
+        .spot-container {
+            display: none;   /* tar bort spoten helt */
+        }
+
+    /* Flexbox container for the hero section */
+    .hero-content {
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto; /* Anpassar höjden efter innehållet */
+        margin-bottom: 10px;
+        max-width: 1200px; /* Maxbredd för att hålla innehållet centrerat och snyggt */
+        border: 2px solid #000000;
+        box-sizing: border-box; /* Se till att bredden inkluderar padding och border */
+        padding: 10px 10px; /* Lägger till 10px padding inuti gränsen från alla håll */
+        display: flex; /* Använder flexbox för att centrera innehåll */
+        flex-direction: column; /* Lägger text och bild i en kolumn */
+        justify-content: center; /* Vertikal centrering */
+        align-items: center; /* Horisontell centrering */
+        
+    }
+
+
+    /* Hero image styles */
+    .hero-image {
+        width: 100%; /* Bilden tar upp full bredd */
+        margin: 0;   /* Tar bort marginalerna för att inte påverka bredden */
+        display: flex;
+        justify-content: center; /* Centerar bilden horisontellt */
+    }
+
+    .hero-image img {
+        width: 100%; /* Bilden tar upp full bredd av sin förälder */
+        height: auto; /* Bevara bildens proportioner */
+        box-sizing: border-box; /* Se till att eventuell padding tas med i beräkningen */
+        padding: 0; /* Ingen padding på själva bilden */
+    }
+
+    /* Hero text styles */    /* Hero text styles */
+    .hero-text {
+        margin-top: 0;
+        width: 100%; /* Säkerställer att texten tar full bredd */
+        text-align: center; /* Centerar texten horisontellt */
+    }
+
+    .hero-text h1 {
+        margin-top: 0;
+        font-size: 2rem;
+        margin: 50px;
+    }
+
+    .hero-text p {
+        font-size: 1.4rem;
+        margin-bottom: 0px;
+    }
+
+
+    /*produkt-kort-1*/
+    /**************************************************************************************/
+
+    .product-card-1 {
+        position: relative; /* Viktigt för att badge och hjärta ska vara relativt kortet */
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto; /* Anpassar höjden efter innehållet */
+        margin-bottom: 5px;
+        max-width: 1200px; /* Maxbredd för att hålla innehållet centrerat och snyggt */
+        border: 2px solid #000000;
+        box-sizing: border-box; /* Se till att bredden inkluderar padding och border */
+    
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .product-card-1 img {
+        width: 100%;
+        aspect-ratio: 2 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        object-fit: cover;
+        margin-bottom: -3.8px; /* Korta bottendelen av bilden något */
+    }
+    
+    .heart-card-1 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+        #heart-card-1 {color: rgb(0, 0, 0);}
+        z-index: 1;
+    }
+    
+    /* Nyhet badge */
+    .badge-card-1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 5px 10px;
+        font-size: 14px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        z-index: 1; /* Gör så att badgen alltid är ovanpå bilden */
+    }
+    
+    /* För att placera detaljerna under ramen */
+    .details-card-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 0px;
+        margin-top: 10px; /* Utrymme mellan bilden och texten */
+    }
+    
+    .title-price-card-1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .title-card-1 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .price-card-1 {
+       /* margin-right: 0px;*/
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+    
+    .brand-card-1 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    /*produkt-kort-2*/
+    /****************************/
+
+    .product-card-2 {
+        position: relative; /* Viktigt för att badge och hjärta ska vara relativt kortet */
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto; /* Anpassar höjden efter innehållet */
+        margin-bottom: 5px;
+        max-width: 1200px; /* Maxbredd för att hålla innehållet centrerat och snyggt */
+        border: 2px solid #000000;
+        box-sizing: border-box; /* Se till att bredden inkluderar padding och border */
+    
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .product-card-2 img {
+        width: 100%;
+        aspect-ratio: 2 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        object-fit: cover;
+        margin-bottom: -3.8px; /* Korta bottendelen av bilden något */
+    }
+    
+    .heart-card-2 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+        #heart-card-2 {color: rgb(220, 205, 4);}
+        z-index: 1;
+    }
+    
+
+    
+    /* För att placera detaljerna under ramen */
+    .details-card-2 {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 0px;
+        margin-top: 10px; /* Utrymme mellan bilden och texten */
+    }
+    
+    .title-price-card-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .title-card-2 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .price-card-2 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+    
+    .brand-card-2 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    /*produkt-card-3*/
+    /*********************************/
+
+    .product-card-3 {
+        position: relative; /* Viktigt för att hjärta ska vara relativt kortet */
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto; /* Anpassar höjden efter innehållet */
+        margin-bottom: 5px;
+        max-width: 1200px; /* Maxbredd för att hålla innehållet centrerat och snyggt */
+        border: 2px solid #000000;
+        box-sizing: border-box; /* Se till att bredden inkluderar padding och border */
+
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-card-3 img {
+        width: 100%;
+        aspect-ratio: 2 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        object-fit: cover;
+        margin-bottom: -3.8px; /* Korta bottendelen av bilden något */
+    }
+
+    .heart-card-3 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+        #heart-card-3 {color: rgb(255, 0, 13);}
+        z-index: 1;
+    }
+
+    /* För att placera detaljerna under ramen */
+    .details-card-3 {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 0px;
+        margin-top: 10px; /* Utrymme mellan bilden och texten */
+    }
+
+    .title-price-card-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-card-3 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .price-card-3 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .brand-card-3 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    /*produkt-card-4*/
+    /*********************************/
+
+    .product-card-4 {
+        position: relative; /* Viktigt för att hjärta ska vara relativt kortet */
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto; /* Anpassar höjden efter innehållet */
+        margin-bottom: 5px;
+        max-width: 1200px; /* Maxbredd för att hålla innehållet centrerat och snyggt */
+        border: 2px solid #000000;
+        box-sizing: border-box; /* Se till att bredden inkluderar padding och border */
+
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-card-4 img {
+        width: 100%;
+        aspect-ratio: 2 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        object-fit: cover;
+        margin-bottom: -3.8px; /* Korta bottendelen av bilden något */
+    }
+
+    .heart-card-4 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+        #heart-card-4 {color: rgb(46, 31, 246);}
+        z-index: 1;
+    }
+
+    /* För att placera detaljerna under ramen */
+    .details-card-4 {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 0px;
+        margin-top: 10px; /* Utrymme mellan bilden och texten */
+    }
+
+    .title-price-card-4 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-card-4 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .price-card-4 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .brand-card-4 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+
+    /*produkt-card-5*/
+    /*********************************/
+
+    .product-card-5 {
+        position: relative; /* Viktigt för att hjärta ska vara relativt kortet */
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto; /* Anpassar höjden efter innehållet */
+        margin-bottom: 5px;
+        max-width: 1200px; /* Maxbredd för att hålla innehållet centrerat och snyggt */
+        border: 2px solid #000000;
+        box-sizing: border-box; /* Se till att bredden inkluderar padding och border */
+
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-card-5 img {
+        width: 100%;
+        aspect-ratio: 2 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        object-fit: cover;
+        margin-bottom: -3.8px; /* Korta bottendelen av bilden något */
+    }
+
+    .heart-card-5 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+        #heart-card-5 {color: rgb(114, 255, 255);}
+        z-index: 1;
+    }
+
+    .details-card-5 { /* För att placera detaljerna under ramen */
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 0px;
+    margin-top: 10px; /* Utrymme mellan bilden och texten */
+    }
+
+    .title-price-card-5 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-card-5 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .price-card-5 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .brand-card-5 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+
+    /*produkt-card-6*/
+    /*********************************/
+
+    .product-card-6 {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto;
+        margin-bottom: 5px;
+        max-width: 1200px;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-card-6 img {
+        width: 100%;
+        aspect-ratio: 2 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        object-fit: cover;
+        margin-bottom: -3.8px;
+    }
+
+    .heart-card-6 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+        #heart-card-6 {color: rgb(199, 133, 0);}
+        z-index: 1;
+    }
+
+    /* För att placera detaljerna under ramen */
+    .details-card-6 {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 0px;
+        margin-top: 10px; /* Utrymme mellan bilden och texten */
+    }
+
+    .title-price-card-6 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-card-6 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .price-card-6 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .brand-card-6 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+
+    /*produkt-card-7*/
+    /*********************************/
+
+    .product-card-7 {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto;
+        margin-bottom: 5px;
+        max-width: 1200px;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-card-7 img {
+        width: 100%;
+        aspect-ratio: 2 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        object-fit: cover;
+        margin-bottom: -3.8px;
+    }
+
+    .heart-card-7 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+        #heart-card-7 {color: rgb(247, 60, 247);}
+        z-index: 1;
+    }
+
+    /* För att placera detaljerna under ramen */
+    .details-card-7 {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 0px;
+        margin-top: 10px; /* Utrymme mellan bilden och texten */
+    }
+
+    .title-price-card-7 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-card-7 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .price-card-7 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .brand-card-7 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+
+    /*produkt-card-8*/
+    /*********************************/
+
+    .product-card-8 {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%; /* Full bredd av viewport */
+        height: auto;
+        margin-bottom: 5px;
+        max-width: 1200px;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-card-8 img {
+        width: 100%;
+        aspect-ratio: 2 / 3; /* Set aspect ratio as 2:3 (Width:Height ratio) */
+        object-fit: cover;
+        margin-bottom: -3.8px;
+    }
+
+    .heart-card-8 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+        #heart-card-8 {color: rgb(221, 148, 170);}
+        z-index: 1;
+    }
+
+    /* För att placera detaljerna under ramen */
+    .details-card-8 {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: 0px;
+        margin-top: 10px; /* Utrymme mellan bilden och texten */
+        margin-bottom: 20px;
+    }
+
+    .title-price-card-8 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-card-8 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .price-card-8 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .brand-card-8 {
+        text-align: left;
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    /*******************************Container för alla ikonkombinationer */
+    
+    /* Container för alla ikonkombinationer */
+    .icon-text {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+
+    }
+    
+    .icon-text i {
+        font-size: 20px;
+        /* color: #22943b; */
+
+
+    }
+
+    .icon-text span {
+        margin-left: 40px; /* Adds space between the icon and the text */
+        font-size: 1.5rem; /* Sets the font size */
+        font-weight: bold; /* Correct way to make the text bold */
+    }
+
+
+
+
+
+    .fa-solid.fa-earth-americas {
+        color: #a3b7fa; /* Set the color of the icon */
+    }
+
+    /* Make the smile icon yellow */
+    .fa-smile {
+        color: #f4d212; /* Yellow color */
+    }
+    
+    .custom-spin {
+        animation: custom-spin 10s infinite linear; /* Adjust the spin speed here */
+    }
+    
+    @keyframes custom-spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    footer {
+
+        /* Basic styles for the footer */
+        .footer-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        /* Hide the accordion content initially */
+        .accordion-content {
+            list-style-type: none; /* Removes bullet points */
+            margin-top: 0px;
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            
+        }
+
+        /* Hide the bullet points for unordered lists */
+        .accordion-content ul {
+            padding-left: 0; /* Removes default padding */
+            margin: 0; /* Removes default margin */
+        }
+
+                /* Styling for the list items */
+        .accordion-content ul li {
+            padding: 5px 0;
+        }
+
+        /* Styling for the accordion toggle */
+        .accordion-toggle {
+            cursor: pointer;
+            padding: 0px;
+            background-color: #ffffff;
+
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Add active class for open accordion content */
+        .accordion-content.active {
+            display: block;
+            max-height: 500px; /* Adjust based on your content */
+            padding: 10px 15px;
+        }
+
+
+
+        
+        /* Center the copyright section */
+        .copy {
+            margin: 0 auto; /* Centers the .copy section horizontally */
+            width: calc(100% - 6px); /* Matches the body's width minus the total border width */
+            max-width: 1200px;
+            box-sizing: border-box; /* Ensures padding and borders are included in the width */
+            text-align: center; /* Centers the text inside the copyright section */
+            background-color: #ffffff;
+            color: #000000; /* Black text */
+            font-size: 1rem;
+        }
+        
+        /* Remove default padding and margin for paragraphs inside the footer */
+        p {
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        
+        /* Indentation for content inside <details> */
+        footer details p {
+            padding-left: 15px;
+        }
+    
+    }
+}
+
+
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    /* Basic styling for body */
+    body {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        background-color: #ffffff;
+    }
+    /* Container for the entire header */
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* Styling for the logo container */
+    .logo-container {
+        
+        display: flex;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    /* Styling for the logo */
+    .logo {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 250px;
+        height: 120px;
+    }
+    /* Container for search bar and icons */
+    .search-icons-container {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    /* Container for the search bar */
+    .search-container {
+        flex: 1;
+        margin-left: 20px;
+    }
+    /* Styling for the search bar */
+    .search-bar {
+        display: flex;
+        align-items: center;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        width: 200px;
+    }
+    .search-bar i {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    .search-bar input {
+        border: 0;
+        outline: none;
+        font-size: 10px;
+        padding: 5px 0;
+        width: 75%;
+        box-sizing: border-box;
+    }
+    /* Styling for the icons container */
+    .icons-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-right: 20px;
+    }
+    /* Styling for the icons */
+    .icons-container i {
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    /* Optional styling for individual icons */
+    .fa-heart {
+        color: grey;
+        margin-right: 20px;
+    }
+    .fa-shopping-cart {
+        color: #65359b;
+    }
+    /* Navigation links */
+    .nav-links {
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: #ffffff;
+    }
+    /* Navigation list */
+    .nav-links ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .nav-links li {
+        margin-right: 10px;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+
+        /* Stil för behållaren som håller alla "spot"-element i en rad */
+        .spot-container {
+            display: none;   /* tar bort spoten helt */
+        }
+
+
+    /* Flexbox container for the hero section */
+    .hero-content {
+        margin: 0px 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        max-width: 1200px;
+        border: 2px solid #000000;
+        box-sizing: border-box + 4px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Hero image styles */
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    /* Hero text styles */
+    .hero-text {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .hero-text h1 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    .hero-text p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    /************************************************** Container for the product kort */
+        /************************************************** Container for the product kort */
+            /************************************************** Container for the product kort */
+
+/* Container för produktkort 1 - 8 */
+.product-container {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(2, 50%); /* Två kolumner med lika stor bredd */
+    grid-template-rows: repeat(4, auto); /* Fyra rader med samma höjd */
+
+}
+
+/************************************************************************* Produktkort 1 */
+/* Produktkort 1 */
+.product-item-1 {
+    grid-column: 1; /* Placera i första kolumnen */
+    grid-row: 1;    /* Placera i första raden */
+    margin-right: 10px; /* Högermarginal mellan korten */
+    margin-bottom: 20px; /* Nedre marginal mellan korten */
+}
+
+.content-card-1 {
+    position: relative;
+    width: 100%; /* Fyll produktkortets bredd */
+}
+
+#id_bild_1 {
+    display: grid;
+    width: 100%;
+}
+
+.heart-card-1 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.badge-card-1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.title-price-card-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.title-card-1 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.price-card-1 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Varumärke under titeln */
+.brand-card-1 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+/************************************************************************* Produktkort 2 */
+/* Produktkort 2 */
+.product-item-2 {
+    grid-column: 2; /* Placera i andra kolumnen */
+    grid-row: 1;    /* Placera i första raden */
+    margin-left: 10px; /* Vänstermarginal mellan korten */
+    margin-bottom: 20px; /* Nedre marginal mellan korten */
+}
+
+.content-card-2 {
+    position: relative;
+    width: 100%; /* Fyll produktkortets bredd */
+}
+
+#id_bild_2 {
+    display: grid;
+    width: 100%;
+}
+
+.heart-card-2 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badge-card-2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.title-price-card-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.title-card-2 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.price-card-2 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Varumärke under titeln */
+.brand-card-2 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+/************************************************************************* Produktkort 3 */
+/* Produktkort 3 */
+.product-item-3 {
+    grid-column: 1; /* Placera i första kolumnen */
+    grid-row: 2;    /* Placera i andra raden */
+    margin-right: 10px; /* Högermarginal mellan korten */
+    margin-bottom: 20px; /* Nedre marginal mellan korten */
+}
+
+.content-card-3 {
+    position: relative;
+    width: 100%; /* Fyll produktkortets bredd */
+}
+
+#id_bild_3 {
+    display: grid;
+    width: 100%;
+}
+
+.heart-card-3 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badge-card-3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.title-price-card-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.title-card-3 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.price-card-3 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Varumärke under titeln */
+.brand-card-3 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+/************************************************************************* Produktkort 4 */
+/* Produktkort 4 */
+.product-item-4 {
+    grid-column: 2; /* Placera i andra kolumnen */
+    grid-row: 2;    /* Placera i andra raden */
+    margin-left: 10px; /* Vänstermarginal mellan korten */
+    margin-bottom: 20px; /* Nedre marginal mellan korten */
+}
+
+.content-card-4 {
+    position: relative;
+    width: 100%; /* Fyll produktkortets bredd */
+}
+
+#id_bild_4 {
+    display: grid;
+    width: 100%;
+}
+
+.heart-card-4 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badge-card-4 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.title-price-card-4 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.title-card-4 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.price-card-4 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Varumärke under titeln */
+.brand-card-4 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+/************************************************************************* Produktkort 5 */
+/* Produktkort 5 */
+.product-item-5 {
+    grid-column: 1; /* Placera i första kolumnen */
+    grid-row: 3;    /* Placera i tredje raden */
+    margin-right: 10px; /* Högermarginal mellan korten */
+    margin-bottom: 20px; /* Nedre marginal mellan korten */
+}
+
+.content-card-5 {
+    position: relative;
+    width: 100%; /* Fyll produktkortets bredd */
+}
+
+#id_bild_5 {
+    display: grid;
+    width: 100%;
+}
+
+.heart-card-5 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badge-card-5 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.title-price-card-5 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.title-card-5 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.price-card-5 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Varumärke under titeln */
+.brand-card-5 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+/************************************************************************* Produktkort 6 */
+/* Produktkort 6 */
+.product-item-6 {
+    grid-column: 2; /* Placera i andra kolumnen */
+    grid-row: 3;    /* Placera i tredje raden */
+    margin-left: 10px; /* Vänstermarginal mellan korten */
+    margin-bottom: 20px; /* Nedre marginal mellan korten */
+}
+
+.content-card-6 {
+    position: relative;
+    width: 100%; /* Fyll produktkortets bredd */
+}
+
+#id_bild_6 {
+    display: grid;
+    width: 100%;
+}
+
+.heart-card-6 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badge-card-6 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.title-price-card-6 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.title-card-6 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.price-card-6 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Varumärke under titeln */
+.brand-card-6 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+/************************************************************************* Produktkort 7 */
+/* Produktkort 7 */
+.product-item-7 {
+    grid-column: 1; /* Placera i första kolumnen */
+    grid-row: 4;    /* Placera i fjärde raden */
+    margin-right: 10px; /* Högermarginal mellan korten */
+    margin-bottom: 20px; /* Nedre marginal mellan korten */
+}
+
+.content-card-7 {
+    position: relative;
+    width: 100%; /* Fyll produktkortets bredd */
+}
+
+#id_bild_7 {
+    display: grid;
+    width: 100%;
+}
+
+.heart-card-7 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badge-card-7 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.title-price-card-7 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.title-card-7 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.price-card-7 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Varumärke under titeln */
+.brand-card-7 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+/************************************************************************* Produktkort 8 */
+/* Produktkort 8 */
+.product-item-8 {
+    grid-column: 2; /* Placera i andra kolumnen */
+    grid-row: 4;    /* Placera i fjärde raden */
+    margin-left: 10px; /* Vänstermarginal mellan korten */
+    margin-bottom: 20px; /* Nedre marginal mellan korten */
+}
+
+.content-card-8 {
+    position: relative;
+    width: 100%; /* Fyll produktkortets bredd */
+}
+
+#id_bild_8 {
+    display: grid;
+    width: 100%;
+}
+
+.heart-card-8 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badge-card-8 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.title-price-card-8 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.title-card-8 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.price-card-8 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Varumärke under titeln */
+.brand-card-8 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+    /********************************** Container for the product kort, hart color */
+        /********************************** Container for the product kort, hart color */
+            /********************************** Container for the product kort, hart color */
+
+    /* Unika färger för hjärtan */
+    #heart-card-1 { color: rgb(0, 0, 0); }
+    #heart-card-2 { color: rgb(220, 205, 4); }
+    #heart-card-3 { color: rgb(255, 0, 13); }
+    #heart-card-4 { color: rgb(46, 31, 246); }
+    #heart-card-5 { color: rgb(114, 255, 255); }
+    #heart-card-6 { color: rgb(199, 133, 0); }
+    #heart-card-7 { color: rgb(247, 60, 247); }
+    #heart-card-8 { color: rgb(221, 148, 170); }
+
+
+    /**************************************************************** Icon text container */
+        /**************************************************************** Icon text container */
+            /**************************************************************** Icon text container */
+
+    /* Gemensam styling för hela container */
+    .icon-text-container {
+        padding: 0;
+        background-color: #ffffff;
+        margin: 20px;
+    }
+
+    /* Styling för första raden */
+    .icon-row-1 {
+        display: flex;
+        width: 100%;
+        /* Om du vill kan du lägga till specifika marginaler här */
+    }
+
+    .icon-earth-and-text {
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* Individuell kontroll */
+    }
+
+    .icon-earth-text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+    .icon-earth-text i {
+        font-size: 40px;
+        color: #1c4dae;
+    }
+
+    .icon-earth-text span {
+        color: #000000;
+    }
+
+    .icon-jet-and-text {
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* Individuell kontroll */
+    }
+
+    .icon-jet-text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 50px;
+    }
+
+    .icon-jet-text i {
+        font-size: 40px;
+        color: #ad367d;
+    }
+
+    .icon-jet-text span {
+        color: #000000;
+    }
+
+    /* Styling för andra raden */
+    .icon-row-2 {
+        display: flex;
+        width: 100%;
+        margin-top: 20px; /* Justera toppmarginalen för andra raden här */
+        /* Individuell kontroll */
+    }
+
+    .icon-shield-and-text {
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* Individuell kontroll */
+    }
+
+    .icon-shield-text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+    .icon-shield-text i {
+        font-size: 40px;
+        color: #29c152;
+    }
+
+    .icon-shield-text span {
+        color: #000000;
+    }
+
+    .icon-smile-and-text {
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* Individuell kontroll */
+    }
+
+    .icon-smile-text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 50px;
+    }
+
+    .icon-smile-text i {
+        font-size: 40px;
+        color: #f8f008;
+    }
+
+    .icon-smile-text span {
+        color: #333;
+    }
+
+
+
+    footer {
+
+        background-color: #f2f2f2; /* Ljusgrå bakgrund */
+        padding: 0px;
+        text-align: center;
+        border: 3px solid black; /* Border runt hela footern */
+        max-width: 1200px;
+        margin: 5px 5px 5px 5px; /* Centrerar hela footern */
+    }
+
+    /* Flexbox container för att placera sektioner i kolumner */
+    .footer-container {
+        display: flex;
+        justify-content: flex-start; /* Vänsterjusterar kolumnerna */
+        flex-wrap: wrap; /* Radbrytning vid små skärmar */
+        width: 70%; /* Kolumnerna tar upp 70% av bredden */
+        margin-left: 0; /* Flyttar till vänster */
+        background-color: #f2f2f2; /* Ljusgrå bakgrund  för kolumnerna */
+        padding: 10px; /* Lägger till padding inuti kolumnområdet */
+    }
+
+    /* Styling för varje sektion */
+    footer .section {
+        flex: 1;
+        min-width: 20%; /* Minsta bredd för varje kolumn */
+        margin: 20px;
+        text-align: left;
+    }
+
+    footer h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+
+    /* Center the copyright text */
+    footer .copy {
+        margin-top: 20px;
+    }
+
+    footer .copy p {
+        font-size: 14px;
+        color: #666;
+    }
+
+ 
+
+
+}
+
+
+
+@media screen and (min-width: 1025px) {
+    /* Basic styling for body */
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        background-color: #ffffff;
+    }
+    
+
+    /* Container for the entire header */
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        
+    }
+    /* Styling for the logo container */
+    .logo-container {
+        
+        display: flex;
+       
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    /* Styling for the logo */
+    .logo {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 250px;
+        height: 120px;
+    }
+    /* Container for search bar and icons */
+    .search-icons-container {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    /* Container for the search bar */
+    .search-container {
+        flex: 1;
+        margin-left: 20px;
+    }
+    /* Styling for the search bar */
+    .search-bar {
+        display: flex;
+        align-items: center;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        width: 200px;
+    }
+    .search-bar i {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    .search-bar input {
+        border: 0;
+        outline: none;
+        font-size: 10px;
+        padding: 5px 0;
+        width: 75%;
+        box-sizing: border-box;
+    }
+    /* Styling for the icons container */
+    .icons-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-right: 20px;
+    }
+    /* Styling for the icons */
+    .icons-container i {
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    /* Optional styling for individual icons */
+    .fa-heart {
+        color: grey;
+        margin-right: 20px;
+    }
+    .fa-shopping-cart {
+        color: #65359b;
+    }
+    /* Navigation links */
+    .nav-links {
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: #ffffff;
+    }
+
+
+    /* Navigation list */
+    .nav-links ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .nav-links li {
+        margin-right: 10px;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+
+
+
+
+    /* Flexbox container for the hero section */
+    .hero-content {
+        margin: 0px 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+       
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse; /* Lägger texten och bilden i en horisontell rad */
+        justify-content: space-between; /* Justerar utrymmet mellan text och bild */
+        align-items: flex-start; /* Centrerar innehållet vertikalt */
+    }
+    /* Hero image styles */
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    /* Hero text styles */
+    .hero-text {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .hero-text h1 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    .hero-text p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+
+
+    /* Stil för behållaren som håller alla "spot"-element i en rad */
+    .spot-container {
+        display: flex; /* Gör container till en flexbox */
+        justify-content: space-between; /* Fördelar spotarna över hela bredden med mellanrum */
+        gap: 20px; /* Sätter avståndet mellan spotarna */
+        padding: 20px; /* Lägg till lite padding om du vill */
+    }
+
+    .spot {
+        width: 100%; /* Varje spot tar 100% av bredden */
+        flex: 1  ; /* Låt varje spot ta lika mycket plats */
+        position: relative; /* Positionering av texten inom spoten */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50%; /* Gör spotarna runda/ovala */
+        overflow: hidden; /* Ser till att innehållet inte sticker utanför */
+        aspect-ratio: 1 / 2; /* Ger runda proportioner (1:1) */
+        background-color: #c19090; /* Valfri bakgrundsfärg */
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ger en skugga för lite djup */
+    }
+
+    .spot img {
+        width: 100%; /* Gör så att bilden fyller spotens bredd */
+        max-width: 100%; /* Håller bilden inom containergränserna */
+        height: 100%; /* Fyller hela höjden också */
+        object-fit: cover; /* Gör att bilden täcker hela ytan */
+    }
+
+    /* Stil för texten i spoten */
+    .spot p {
+        position: absolute; /* Positionera texten ovanpå bilden */
+        top: 50%; /* Placera texten i mitten vertikalt */
+        left: 50%; /* Placera texten i mitten horisontellt */
+        transform: translate(-50%, -50%); /* Flytta texten så den är exakt centrerad */
+        color: white; /* Valfri textfärg */
+        font-size: 1.5rem; /* Justera textstorlek efter behov */
+        font-weight: bold; /* Gör texten fet */
+        text-align: center; /* Centrerar texten */
+    }
+
+    #spot-1 p {
+        color: #ff8400; /* Valfri textfärg */
+    }
+
+    #spot-2 p {
+        color: #cbb9fd; /* Valfri textfärg */
+    }
+
+    #spot-3 p {
+        color: #ce15a2; /* Valfri textfärg */
+    }
+
+
+    /************************************************** Container for the product kort */
+        /************************************************** Container for the product kort */
+            /************************************************** Container for the product kort */
+
+    /* Container för produktkort 1 - 8 */
+    .product-container {
+        display: grid;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        grid-template-columns: repeat(4, 25%); /* Två kolumner med lika stor bredd */
+        grid-template-rows: repeat(2, 450px); /* Fyra rader med samma höjd */
+
+    }
+
+    /************************************************************************* Produktkort 1 */
+    /* Produktkort 1 */
+    .product-item-1 {
+        grid-column: 1; /* Placera i första kolumnen */
+        grid-row: 1;    /* Placera i första raden */
+        margin-right: 10px; /* Högermarginal mellan korten */
+        margin-bottom: 20px; /* Nedre marginal mellan korten */
+    }
+
+    .content-card-1 {
+        position: relative;
+        width: 100%; /* Fyll produktkortets bredd */
+    }
+
+    #id_bild_1 {
+        display: grid;
+        width: 100%;
+        height: 100%;
+    }
+
+    .heart-card-1 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .badge-card-1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        background-color: #000;
+        color: white;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    .title-price-card-1 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .title-card-1 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+
+    .price-card-1 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    /* Varumärke under titeln */
+    .brand-card-1 {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+
+    /************************************************************************* Produktkort 2 */
+    /* Produktkort 2 */
+    .product-item-2 {
+        grid-column: 2; /* Placera i andra kolumnen */
+        grid-row: 1;    /* Placera i första raden */
+        margin-left: 10px; /* Vänstermarginal mellan korten */
+        margin-right: 10px; /* Högermarginal mellan korten */
+        margin-bottom: 20px; /* Nedre marginal mellan korten */
+    }
+
+    .content-card-2 {
+        position: relative;
+        width: 100%; /* Fyll produktkortets bredd */
+
+    }
+
+    #id_bild_2 {
+        display: grid;
+        width: 100%;
+
+    }
+
+    .heart-card-2 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    .title-price-card-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .title-card-2 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+
+    .price-card-2 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    /* Varumärke under titeln */
+    .brand-card-2 {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+
+    /************************************************************************* Produktkort 3 */
+    /* Produktkort 3 */
+    .product-item-3 {
+        grid-column: 3; /* Placera i första kolumnen */
+        grid-row: 1;    /* Placera i andra raden */
+        margin-left: 10px; /* Vänstermarginal mellan korten */
+        margin-right: 10px; /* Högermarginal mellan korten */
+        margin-bottom: 20px; /* Nedre marginal mellan korten */
+    }
+
+    .content-card-3 {
+        position: relative;
+        width: 100%; /* Fyll produktkortets bredd */
+    }
+
+    #id_bild_3 {
+        display: grid;
+        width: 100%;
+    }
+
+    .heart-card-3 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    .title-price-card-3 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .title-card-3 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+
+    .price-card-3 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    /* Varumärke under titeln */
+    .brand-card-3 {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+
+    /************************************************************************* Produktkort 4 */
+    /* Produktkort 4 */
+    .product-item-4 {
+        grid-column: 4; /* Placera i andra kolumnen */
+        grid-row: 1;    /* Placera i andra raden */
+        margin-left: 10px; /* Vänstermarginal mellan korten */
+        margin-bottom: 20px; /* Nedre marginal mellan korten */
+    }
+
+    .content-card-4 {
+        position: relative;
+        width: 100%; /* Fyll produktkortets bredd */
+    }
+
+    #id_bild_4 {
+        display: grid;
+        width: 100%;
+    }
+
+    .heart-card-4 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    .title-price-card-4 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .title-card-4 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+
+    .price-card-4 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    /* Varumärke under titeln */
+    .brand-card-4 {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+
+    /************************************************************************* Produktkort 5 */
+    /* Produktkort 5 */
+    .product-item-5 {
+        grid-column: 1; /* Placera i första kolumnen */
+        grid-row: 2;    /* Placera i tredje raden */
+        margin-right: 10px; /* Högermarginal mellan korten */
+        margin-bottom: 20px; /* Nedre marginal mellan korten */
+    }
+
+    .content-card-5 {
+        position: relative;
+        width: 100%; /* Fyll produktkortets bredd */
+    }
+
+    #id_bild_5 {
+        display: grid;
+        width: 100%;
+    }
+
+    .heart-card-5 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    .title-price-card-5 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .title-card-5 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+
+    .price-card-5 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    /* Varumärke under titeln */
+    .brand-card-5 {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+
+    /************************************************************************* Produktkort 6 */
+    /* Produktkort 6 */
+    .product-item-6 {
+        grid-column: 2; /* Placera i andra kolumnen */
+        grid-row: 2;    /* Placera i tredje raden */
+        margin-right: 10px; /* Högermarginal mellan korten */
+        margin-left: 10px; /* Vänstermarginal mellan korten */
+        
+        margin-bottom: 20px; /* Nedre marginal mellan korten */
+    }
+
+    .content-card-6 {
+        position: relative;
+        width: 100%; /* Fyll produktkortets bredd */
+    }
+
+    #id_bild_6 {
+        display: grid;
+        width: 100%;
+    }
+
+    .heart-card-6 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    .title-price-card-6 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .title-card-6 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+
+    .price-card-6 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    /* Varumärke under titeln */
+    .brand-card-6 {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+
+    /************************************************************************* Produktkort 7 */
+    /* Produktkort 7 */
+    .product-item-7 {
+        grid-column: 3; /* Placera i första kolumnen */
+        grid-row: 2;    /* Placera i fjärde raden */
+        margin-right: 10px; /* Högermarginal mellan korten */
+        margin-left: 10px; /* Vänstermarginal mellan korten */
+        margin-bottom: 20px; /* Nedre marginal mellan korten */
+    }
+
+    .content-card-7 {
+        position: relative;
+        width: 100%; /* Fyll produktkortets bredd */
+    }
+
+    #id_bild_7 {
+        display: grid;
+        width: 100%;
+    }
+
+    .heart-card-7 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    .title-price-card-7 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .title-card-7 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+
+    .price-card-7 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    /* Varumärke under titeln */
+    .brand-card-7 {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+
+    /************************************************************************* Produktkort 8 */
+    /* Produktkort 8 */
+    .product-item-8 {
+        grid-column: 4; /* Placera i andra kolumnen */
+        grid-row: 2;    /* Placera i fjärde raden */
+        margin-left: 10px; /* Vänstermarginal mellan korten */
+        margin-bottom: 20px; /* Nedre marginal mellan korten */
+    }
+
+    .content-card-8 {
+        position: relative;
+        width: 100%; /* Fyll produktkortets bredd */
+    }
+
+    #id_bild_8 {
+        display: grid;
+        width: 100%;
+    }
+
+    .heart-card-8 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    .title-price-card-8 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .title-card-8 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+
+    .price-card-8 {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    /* Varumärke under titeln */
+    .brand-card-8 {
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+
+
+
+
+    /* Unika färger för hjärtan */
+    #heart-card-1 { color: rgb(0, 0, 0); }
+    #heart-card-2 { color: rgb(220, 205, 4); }
+    #heart-card-3 { color: rgb(255, 0, 13); }
+    #heart-card-4 { color: rgb(46, 31, 246); }
+    #heart-card-5 { color: rgb(114, 255, 255); }
+    #heart-card-6 { color: rgb(199, 133, 0); }
+    #heart-card-7 { color: rgb(247, 60, 247); }
+    #heart-card-8 { color: rgb(221, 148, 170); }
+
+
+    /******************************************************** Icon text container */
+
+    .icon-text-container {
+        display: flex;
+        justify-content: left; /* Fördelar elementen jämnt över bredden */
+        align-items: center; /* Centrera ikonerna och texten vertikalt */
+        padding: 10px;
+        flex-wrap: wrap; /* Tillåter radbrytning om det behövs */
+    }
+    
+    .icon-text-container > div {
+        display: flex;
+        align-items: center;
+    }
+    
+    .icon-text-container i {
+        margin-right: 10px; /* Utrymme mellan ikonen och texten */
+        color: #000000; /* Färg på ikonen */
+    }
+    
+    .icon-text-container span {
+        font-size: 20px;
+    }
+
+    #id_earth {
+        justify-content: left ; /* Vänsterjusterar kolumnerna */
+        margin-left: 40px;
+        color: #602bca;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    #id_jet {
+        justify-content: left; /* Vänsterjusterar kolumnerna */
+        margin-left: 40px;
+        color: #af2380;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #id_shield {
+        justify-content: flex ; /* Vänsterjusterar kolumnerna */
+        margin-left: 40px;
+        color: #51df5b;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #id_smile {
+        justify-content: center; /* Vänsterjusterar kolumnerna */
+        margin-left: 40px;
+        color: #dfee10;
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+
+    footer {
+
+        background-color: #f2f2f2; /* Ljusgrå bakgrund */
+        padding: 0px;
+        text-align: center;
+        border: 3px solid black; /* Border runt hela footern */
+        max-width: 1200px;
+        margin: 5px 5px 5px 5px; /* Centrerar hela footern */
+    }
+
+    /* Flexbox container för att placera sektioner i kolumner */
+    .footer-container {
+        display: flex;
+        justify-content: flex-start; /* Vänsterjusterar kolumnerna */
+        flex-wrap: wrap; /* Radbrytning vid små skärmar */
+        width: 50%; /* Kolumnerna tar upp 70% av bredden */
+        margin-left: 0; /* Flyttar till vänster */
+        background-color: #f2f2f2; /* Ljusgrå bakgrund  för kolumnerna */
+        padding: 10px; /* Lägger till padding inuti kolumnområdet */
+    }
+
+    /* Styling för varje sektion */
+    footer .section {
+        flex: 1;
+        min-width: 20%; /* Minsta bredd för varje kolumn */
+        margin: 20px;
+        text-align: left;
+    }
+
+    footer h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+
+    /* Center the copyright text */
+    footer .copy {
+        margin-top: 20px;
+    }
+
+    footer .copy p {
+        font-size: 20px;
+        color: #666;
+    }
+
+ 
+
+
+}

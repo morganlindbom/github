@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svart T-Shirt</title>
+    <!-- Länkar till CSS-filen -->
+    <link rel="stylesheet" href="Styles_produkt_details.css" />
+
+
+
+    <!-- Länk till Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Header sektion -->
+    <header class="header">
+        <!-- Logotyp-container -->
+        <div class="logo-container">
+            <img src="Bilder/projekt bild logo.jpg" alt="Freaky Fashion Logo" class="logo">
+        </div>
+
+        <!-- Container för sökfältet och ikonerna -->
+        <div class="search-icons-container">
+            <!-- Sökfält-container -->
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Sök produkt">
+                </div>
+            </div>
+
+            <!-- Ikon-container -->
+            <div class="icons-container">
+                <!-- Hjärtikon -->
+                <a href="#" class="icon-link" id="likeLink">
+                    <i class="fa-solid fa-heart" id="likeIcon"></i>
+                </a>
+
+                <!-- Varukorgsikon -->
+                <a href="#" class="icon-link" id="cartLink">
+                    <i class="fa-solid fa-shopping-cart" id="cartIcon"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Länkar -->
+    <nav class="nav-links">
+        <ul>
+            <li><a href="http://www.google.se" class="no-reload-link">Nyheter</a></li>
+            <li><a href="http://www.google.se" class="no-reload-link">Kategorier</a></li>
+            <li><a href="http://www.google.se" class="no-reload-link">Topplistan</a></li>
+            <li><a href="http://www.google.se" class="no-reload-link">Rea</a></li>
+            <li><a href="http://www.google.se" class="no-reload-link">Kampanjer</a></li>
+        </ul>
+    </nav>
+
+    <!-- svart_t-shirt Section -->
+    <section id="svart_t-shirt">
+        <div class="svart_t-shirt-content">
+            <!-- Bild till vänster -->
+            <div class="svart_t-shirt-image">
+                <img src="Bilder/projekt bild svart_t-shirt.jpg" alt="Svart T-shirt Image" />
+                <div class="heart-svart_t-shirt">
+                    <i class="far fa-heart" id="id_heart-svart_t-shirt"></i>
+                </div>
+            </div>
+            <!-- Text till höger -->
+            <div class="svart_tshirt-text">
+                <h1>Svart T-Shirt</h1>
+                <h4>Levis</h4>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio dicta
+                    consequuntur, deserunt cumque facilis ut nobis minus ex eveniet qui adipisci. Soluta provident
+                    consequuntur at quam, qui officia odio.</h3>
+                <h2>199 SEK</h2>
+                <button class="add-to-cart-button" id="id_add_to_cart_button">Lägg i varukorg</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Centrerad rubrik -->
+    <h2 class="similar-products-heading">Liknande produkter</h2>
+
+    <!-- Produkter -->
+    <div class="product-container">
+        <!-- Container för produkt 1 -->
+        <div class="product-item-1">
+            <a href="https://www.google.se" class="product-card-1">
+                <div class="content-card-1">
+                    <img src="Bilder/projekt bild 1.jpg" id="id_bild_1" alt="Produktbild 1">
+
+                    <!-- Hjärta-ikon placerad nere till höger -->
+                    <div class="heart-card-1">
+                        <i class="far fa-heart" id="heart-card-1"></i>
+                    </div>
+                </div>
+            </a>
+
+            <div class="details-card-1">
+                <div class="title-price-card-1">
+                    <span class="title-card-1">Svart T-shirt</span>
+                    <span class="price-card-1">199 SEK</span>
+                </div>
+                <div class="brand-card-1">
+                    <span>Levis</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container för produkt 2 -->
+        <div class="product-item-2">
+            <a href="https://www.google.se" class="product-card-2">
+                <div class="content-card-2">
+                    <img src="Bilder/projekt bild 2.jpg" id="id_bild_2" alt="Produktbild 2">
+
+                    <!-- Hjärta-ikon placerad nere till höger -->
+                    <div class="heart-card-2">
+                        <i class="far fa-heart" id="heart-card-2"></i>
+                    </div>
+                </div>
+            </a>
+
+            <div class="details-card-2">
+                <div class="title-price-card-2">
+                    <span class="title-card-2">Blå Jeans</span>
+                    <span class="price-card-2">499 SEK</span>
+                </div>
+                <div class="brand-card-2">
+                    <span>Levis</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container för produkt 3 -->
+        <div class="product-item-3">
+            <a href="https://www.google.se" class="product-card-3">
+                <div class="content-card-3">
+                    <img src="Bilder/projekt bild 3.jpg" id="id_bild_3" alt="Produktbild 3">
+
+                    <!-- Hjärta-ikon placerad nere till höger -->
+                    <div class="heart-card-3">
+                        <i class="far fa-heart" id="heart-card-3"></i>
+                    </div>
+                </div>
+            </a>
+
+            <div class="details-card-3">
+                <div class="title-price-card-3">
+                    <span class="title-card-3">Vit Skjorta</span>
+                    <span class="price-card-3">299 SEK</span>
+                </div>
+                <div class="brand-card-3">
+                    <span>Levis</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Container för ikoner och text -->
+    <div class="icon-text-container">
+        <div class="icon-row-1">
+            <div class="icon-earth-and-text">
+                <div class="icon-earth-text">
+                    <i class="fa-solid fa-earth-americas" id="id_earth"></i>
+                    <span>Gratis frakt och returer</span>
+                </div>
+            </div>
+            <div class="icon-jet-and-text">
+                <div class="icon-jet-text">
+                    <i class="fas fa-jet-fighter" id="id_jet"></i>
+                    <span>Expressfrakt</span>
+                </div>
+            </div>
+        </div>
+        <div class="icon-row-2">
+            <div class="icon-shield-and-text">
+                <div class="icon-shield-text">
+                    <i class="fa-solid fa-shield" id="id_shield"></i>
+                    <span>Säkra betalningar</span>
+                </div>
+            </div>
+            <div class="icon-smile-and-text">
+                <div class="icon-smile-text">
+                    <i class="fa-solid fa-smile" id="id_smile"></i>
+                    <span>Nyheter varje dag</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="java.js"></script>
+
+</body>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="section">
+            <h3 class="accordion-toggle">Shopping</h3>
+            <ul class="accordion-content">
+                <li>Vinterjackor</li>
+                <li>Pufferjackor</li>
+                <li>Kappor</li>
+                <li>Trenchcoats</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="accordion-toggle">Mina Sidor</h3>
+            <ul class="accordion-content">
+                <li>Mina Ordrar</li>
+                <li>Mitt Konto</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="accordion-toggle">Kundtjänst</h3>
+            <ul class="accordion-content">
+                <li>Returnpolicy</li>
+                <li>Integritetspolicy</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copy">
+        <p>&copy; Freaky Fashion. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>
