@@ -1,9 +1,8 @@
-/* Stilar för hela sidan */
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
 /* Header-stil */
@@ -12,78 +11,78 @@ body {
     color: white;
     height: 50px;
     width: 100%;
-    padding: 0;
+    padding: 5px 5px;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    font-size: 1.6vw;
     box-sizing: border-box;
 }
 
-.header-content {
-    padding-left: 20px;
-}
-
-.header-content h1 {
-    font-size: 20px;
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-}
-
-/* Layout */
-.layout {
-    display: flex;
-    height: calc(100vh - 50px); /* Anpassar höjden till skärmen minus header */
-}
-
-/* Sidebar-stil */
-.sidebar {
-    background-color: #ececec;
-    width: 100px;
-    padding: 20px;
-    border: 2px solid #000000;
-
-}
-
-.sidebar ul {
-    list-style-type: none;
     padding: 0;
 }
 
+/* Layout container */
+.layout {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 25%; /* Sidebar takes up 25% of the screen */
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc; /* A separator between sidebar and main content */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
 .sidebar ul li {
-    padding: 0px 0;
+    margin-bottom: 10px;
 }
 
 .sidebar ul li a {
-    display: block;
     text-decoration: none;
-    color: black;
+    color: #333;
     font-weight: bold;
+    font-size: 4vw;
 }
 
-/* Main content-stil */
+/* Main content area */
 .main-content {
-    flex-grow: 1;
+    width: 75%; /* Main content takes up 75% of the screen */
     padding: 20px;
 }
 
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+main > * {
+    width: 100%; /* Full width of the main content */
+    margin-bottom: 20px; /* Add space between each section */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
 }
 
-.top-bar h2 {
-    margin: 0;
-}
-
-.new-product-btn {
-    padding: 10px 15px;
-    background-color: #007bff;
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
 }
+
+button:hover {
+    background-color: #45a049;
+}
+
 

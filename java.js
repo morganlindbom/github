@@ -1,5 +1,7 @@
 
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Hämta alla länkar med klassen no-reload-link
     const noReloadLinks = document.querySelectorAll('.no-reload-link');
@@ -75,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+
 });
     
 

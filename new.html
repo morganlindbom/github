@@ -30,21 +30,32 @@
         <main class="main-content">
             <div class="top-bar">
                 <h2>Ny produkt</h2>
-                </div>
+            </div>
 
-            
             <div class="text-item-1">
-                <h3>Namn:</h4>
+                <h4>Namn:</h4>
                 <input type="text" id="id-text-1" />
-                </div>
+            </div>
 
             <div class="text-item-2">
-                <h3>Beskrivning:</h4>
-                <input type="text" id="id-text-1" />
-                </div>
+                <h4>Beskrivning:</h4>
+                <textarea rows="5" cols="20" placeholder=""></textarea>
+            </div>
 
+            <div class="bild">
+                <label for="imageUpload">Bild</label>
+                <input type="file" id="imageUpload" name="uploadedImage" accept=".png, .jpeg, .jpg" required>
+            </div>
 
+            <div class="SKU">
+                <label><strong>SKU:</strong></label>
+                <input type="text" id="id-sku" name="sku" placeholder="ABC123" pattern="[A-Za-z]{3}[0-9]{3}" title="SKU must be in the format: 3 letters followed by 3 digits (e.g., ABC123)" required>
+            </div>
 
+            <div class="pris">
+                <h4>Pris:</h4>
+                <input type="number" id="id-pris" name="pris" placeholder="100" min="0" required>
+            </div>
 
             <div class="checkbox-group">
                 <h4>Kategorier</h4>
@@ -61,12 +72,12 @@
                     <label for="Byxor">Byxor</label>
                 </div>
                 <div class="checkbox-item">
-                <input type="checkbox" id="Skor" />
-                <label for="Skor">Skor</label>
-              </div>
+                    <input type="checkbox" id="Skor" />
+                    <label for="Skor">Skor</label>
+                </div>
             </div>
-                  <button type="submit">Lägg till</button>
-                </form>
+
+            <button type="submit">Lägg till</button>
         </main>
     </div>
 </body>
