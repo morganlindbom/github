@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Administration</title>
-    <link rel="stylesheet" href="styles_Administration.css" />
+    <link rel="stylesheet" href="styles_new.css" />
 </head>
 
 <body>
@@ -29,37 +29,43 @@
         <!-- Innehåll i huvudsektionen -->
         <main class="main-content">
             <div class="top-bar">
-                <h2>Produkter</h2>
-                <button class="new-product-btn">Ny produkt</button>
-            </div>
+                <h2>Ny produkt</h2>
+                </div>
 
-            <!-- Produkt-tabellen -->
-            <table class="product-table">
-                <thead>
-                    <tr>
-                        <th>Namn</th>
-                        <th>SKU</th>
-                        <th>Pris</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Svart T-Shirt</td>
-                        <td>AAA111</td>
-                        <td>199</td>
-                    </tr>
-                    <tr>
-                        <td>Vit T-Shirt</td>
-                        <td>BBB111</td>
-                        <td>199</td>
-                    </tr>
-                    <tr>
-                        <td>...</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+            
+            <div class="text-item-1">
+                <h3>Namn:</h4>
+                <input type="text" id="id-text-1" />
+                </div>
+
+            <div class="text-item-2">
+                <h3>Beskrivning:</h4>
+                <input type="text" id="id-text-1" />
+                </div>
+
+
+
+            <h4>Kategorier</h4>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="T-shirts" />
+                <label for="T-shirts">T-shirts</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="Sommar" />
+                <label for="Sommar">Sommar</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="Byxor" />
+                <label for="Byxor">Byxor</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="Skor" />
+                <label for="Skor">Skor</label>
+              </div>
+            </div>
+                  <button type="submit">Lägg till</button>
+                </form>
         </main>
     </div>
 </body>
