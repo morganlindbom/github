@@ -82,8 +82,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
     
-function showMessage() {
-    alert ("Administation: ny produkt");
+function openNewWindow() {
+    // Öppnar ett tomt fönster med de specifika dimensionerna
+    let newWindow = window.open("", "_blank", "width=600,height=400" );
+
+    // Kontrollera innehållet i det nya fönstret genom att skriva HTML direkt i dokumentet
+    newWindow.document.write(`
+        <html>
+            <head>
+                <title>Administration ny produkt</title>
+            </head>
+            <body>
+                <h1>Administration</h1>
+                <p>Produkten är <strong><span style="color: green ;">Godkänd</span></strong></p>
+                <!-- Färgar texten grön -->
+                
+                <br>
+                <button onclick="window.close()">Stäng fönstret</button>
+            </body>
+        </html>
+    `);
+    
+    // Valfritt: Stäng dokumentet för att signalera att skrivprocessen är klar
+    newWindow.document.close();
 }
 
-
+function toggleRotation() {
+    const earthIcon = document.getElementById("id_earth");
+    if (earthIcon.style.animationPlayState === 'paused') {
+        earthIcon.style.animationPlayState = 'running'; // Resume rotation
+    } else {
+        earthIcon.style.animationPlayState = 'paused'; // Pause rotation
+    }
+}

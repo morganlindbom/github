@@ -767,8 +767,6 @@
     .icon-text i {
         font-size: 20px;
         /* color: #22943b; */
-
-
     }
 
     .icon-text span {
@@ -777,13 +775,22 @@
         font-weight: bold; /* Correct way to make the text bold */
     }
 
+    #id_earth {
 
-
-
-
-    .fa-solid.fa-earth-americas {
-        color: #a3b7fa; /* Set the color of the icon */
-    }
+        /* Earth icon rotation and color */
+        color: #1c4dae;
+            animation: rotate 30s linear infinite; /* Rotate the Earth icon continuously */
+        }
+    
+        /* Define the keyframes for rotation */
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg); /* Start position */
+            }
+            to {
+                transform: rotate(360deg); /* End position (one full rotation) */
+            }
+        }
 
     /* Make the smile icon yellow */
     .fa-smile {
@@ -794,14 +801,7 @@
         animation: custom-spin 10s infinite linear; /* Adjust the spin speed here */
     }
     
-    @keyframes custom-spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
+
 
 
     footer {
@@ -1666,6 +1666,23 @@
 
     .icon-earth-text span {
         color: #000000;
+    }
+    
+    #id_earth {
+
+    /* Earth icon rotation and color */
+    color: #1c4dae;
+        animation: rotate 30s linear infinite; /* Rotate the Earth icon continuously */
+    }
+
+    /* Define the keyframes for rotation */
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg); /* Start position */
+        }
+        to {
+            transform: rotate(360deg); /* End position (one full rotation) */
+        }
     }
 
     .icon-jet-and-text {
@@ -2575,9 +2592,21 @@
     #id_earth {
         justify-content: left ; /* Vänsterjusterar kolumnerna */
         margin-left: 40px;
-        color: #602bca;
         font-size: 40px;
         text-align: center;
+    /* Earth icon rotation and color */
+    color: #1c4dae;
+        animation: rotate 30s linear infinite; /* Rotate the Earth icon continuously */
+    }
+
+    /* Define the keyframes for rotation */
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg); /* Start position */
+        }
+        to {
+            transform: rotate(360deg); /* End position (one full rotation) */
+        }
     }
     
     #id_jet {
