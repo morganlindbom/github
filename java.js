@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); // Stoppar sidladdningen
         alert('Produktkort 1, Hjärta, klickad, Sidan laddas inte om, men hjärtat byter färg!');
         // Check current color and toggle between red and gray
-        if (this.style.color === 'red') {
+        if (this.style.color == 'red') {
             this.style.color = 'gray';  // Change to gray
         } else {
             this.style.color = 'red';   // Change to red
